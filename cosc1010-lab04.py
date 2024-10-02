@@ -3,7 +3,7 @@
 # Submission Date 10/2/2024
 # Lab 03 
 # Lab Section: 15
-# Sources, people worked with, help given to: Jed
+# Sources, people worked with, help given to: Jed, Koen Myers
 
 
 
@@ -95,8 +95,14 @@ min_temps = [
 # Write a single for loop to calculate both the average maximum temperature and the average minimum temperature.
 # You cannot use any pre-existing functions (like mean()) and must perform the calculations manually.
 # Output the results of both calculations.
-print(sum(min_temps)/len(min_temps))
-print(sum(max_temps)/len(max_temps))
+numbers_in_range = (len(min_temps))
+sum_min_temps = 0
+sum_max_temps = 0
+for position in range(len(min_temps)):
+    sum_min_temps+=min_temps[position]
+    sum_max_temps+=max_temps[position]
+print(sum_max_temps/numbers_in_range)
+print(sum_min_temps/numbers_in_range)
 
 # For the next part, determine the highest and lowest recorded temperatures.
 # HINT: You can find this information without using any logic or looping.
